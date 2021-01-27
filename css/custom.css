@@ -105,6 +105,14 @@ footer {
     color: #fff9;
 }
 
+footer .fa {
+    display: inline block;
+    font-size: 20px;
+    width: 60px;
+    height: 20px;;
+    color: #fff;
+}
+
 footer a {
     color: #fff;
     text-decoration: none;
