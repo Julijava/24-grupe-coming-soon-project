@@ -34,8 +34,25 @@ class ProgressBar {
         return true;
     }
 
+    generateProgressBar(progressBar) {
+        return `<div class="progress-bar">
+                    <div class="texts">
+                    <div class="label">${progressBar.label}</div>
+                    <div class="value">${progressBar.value}%</div>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="width: ${progressBar.value}%;"></div>
+                </div>
+        </div>`;
+    }
+
     render() {
-        let HTML = 'DEMO PROGRESSBAR CONTENT...';
+        let HTML = '';
+
+        for (const progress of this.data) {
+            console.log(progress);
+            HTML += this.generateProgressBar(progress) ;
+        }
 
         this.DOM.innerHTML += HTML;
     }
