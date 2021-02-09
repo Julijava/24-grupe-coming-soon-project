@@ -17,7 +17,6 @@
     margin-bottom: 40px;
 }
 
-
 .hero .title {
     display: inline block;
     width: 100%;
@@ -26,7 +25,6 @@
     font-size: 50px;
     line-height: 50px;
 }
-
 
 .hero .subtitle {
     display: inline-block;
@@ -37,20 +35,17 @@
     color: #555;
 }
 
-
 .hero .clock {
+
     margin-bottom: 60px;
 }
-
 
 .hero form {
     margin-bottom: 20px;
 }
 
-
 .hero .mouse {
 }
-
 
 /* main section */
 
@@ -77,12 +72,26 @@ main .block-description {
 }
 
 main .block-description > a {
-    color: #E92064;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 main .block-description > a:hover {
     text-decoration: underline;
+}
+
+.right-column .form button {
+    float: right;
+}
+
+@media (min-width: 1100px) {
+    .form > input{
+        width: calc(50% - 10px);
+        float: left;
+    }
+    .form > input:first-of-type {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 900px) {
