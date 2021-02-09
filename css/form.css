@@ -13,7 +13,9 @@ width: 100%;
     line-height: 24px;
     border: none;
     border-bottom: 2px solid #ccc;
+    background-color: transparent;
     resize: vertical;
+    outline: none;
 }
 .form > textarea {
     min-height: 94px ;
