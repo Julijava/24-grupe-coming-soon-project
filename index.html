@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming soon</title>
+    <LINK rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <!-- init -->
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -29,7 +30,7 @@
               illo nemo dicta quas nihil? Fugiat repellat sequi maiores dicta culpa.</p>
               <div class="clock"></div>
               <form class="form">
-                <input type="email" placeholder="Type your email" required>
+                <input data-validation-rule="email" type="email" placeholder="Type your email" required>
                 <button class="btn" type="submit">Subscribe now</button>
               </form>
               <div class="mouse">
@@ -53,9 +54,9 @@
                 <p class="block-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur 
                     enim commodi maxime aliquam ipsum. Maxime at nemo <a href="mailto:24-grupe@programuotojai.xyz">24&#8209;grupe@programuotojai.xyz</a> deserunt eius!</p>
                 <form class="form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
+                    <input data-validation-rule="name" type="text" placeholder="Name" required>
+                    <input data-validation-rule="email" type="email" placeholder="Email" required>
+                    <textarea data-validation-rule="text" placeholder="Message" required></textarea>
                     <button class="btn" type="submit">Send message</button>
                 </form>
             </div>

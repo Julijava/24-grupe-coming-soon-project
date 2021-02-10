@@ -1,6 +1,14 @@
+import { Validation } from './Validation.js';
+
+
 class Forms {
     constructor() {
         this.forms = [];
+
+        
+const val = new Validation();
+console.log(val);
+
         this.init();
     }
 
@@ -22,15 +30,25 @@ class Forms {
 
              const submit = form.querySelector('.btn');
 
-             submit.addEventListener('click', (event) => {
+             submit.addEventListener('click', event => {
                 event.preventDefault();
                 
                 for (const input of allInputs) {
-                    console.log(input.value);
+                    const rule = input.dataset.vadlidationRule;
+                    const text = input.value;
+
+                    switch (rule) {
+                        case 'name':
+                            console.log(Validation);
+
+                            break;
+                    
+                        default:
+                            break;
+                    }
                 }
              })
          }
      }
 }
-
 export { Forms }
