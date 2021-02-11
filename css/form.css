@@ -5,6 +5,8 @@ width: 100%;
 
 .form > label {
     font-size: 0;
+    float: left;
+    font-size: 0;
 }
 
 .form > input,
