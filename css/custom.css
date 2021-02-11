@@ -129,6 +129,16 @@ footer.container {
     color: #fff9;
     padding-top: 0;
 }
+.container > .back-to-top {
+    position: relative;
+}
+
+.container > .back-to-top > .btn {
+    position: absolute;
+    top: -25px;
+    right: -11px;
+}
+
 .container > .socials {
     padding: 15px 0;
     border-bottom: 2px solid #fff;
@@ -203,7 +213,10 @@ footer > .short-row a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
+    .container > .back-to-top {
+        display: none;
+    }
     .bottom-texts {
         flex-direction: column;
         gap: 0;
@@ -212,3 +225,4 @@ footer > .short-row a:hover {
         display: none;
     }
 }
+

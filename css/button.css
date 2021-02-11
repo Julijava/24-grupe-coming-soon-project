@@ -3,6 +3,7 @@
     padding: 13px 40px;
     font-size: 18px;
     line-height: 20px ;
+    text-align: center;
     border-radius: 3px ;
     background-color: var(--secondary-color) ;
     color: #fff;
@@ -15,4 +16,13 @@
     /* background-color: var(--secondary-color-dark); */
     /* box-shadow: 0 2px 4px 0 #0005; */
     opacity: 1px;
+}
+
+.btn.fa {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    font-size: 26px;
+    line-height: 36px;
+    border-radius: 50%;
 }
